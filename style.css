@@ -1,0 +1,140 @@
+body {
+    font-size: 16px; /* Base font size for mobile */
+    text-align: center;
+    background-color: rgb(247, 232, 69);
+    color: rgb(46, 46, 46);
+}
+
+header {
+    color: #ffffff;
+    height: 200px;
+    margin-bottom: 130px;
+    background-color: rgb(24, 192, 154);
+    background-position: top;
+    background-size: 100%;
+    outline: 3px solid #ffffff;
+    text-align: center; /* Center header text */
+}
+
+.header_t {
+    text-align: center;
+}
+
+#logo {
+    width: 260px;
+    height: 160px;
+    float: left;
+    margin-right: 10px;
+    background: url(/img/coke.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.6);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    width: auto;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#nav ul {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    float: center;
+    background-color: rgb(63, 0, 141);
+}
+
+#nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: rgb(63, 0, 141);
+}
+
+table, tr, td {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(73, 67, 174);
+    color: #ffffff;
+    padding: 3px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+footer {
+    color: #ffffff;
+    background-color: rgb(24, 192, 154);
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: 30px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.menu {
+    float: right;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Media query for larger screens (e.g., tablets) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Increase font size for tablets */
+    }
+
+    table {
+        order: 0;
+    }
+
+    header {
+        height: 200px;
+        margin-bottom: 130px;
+        flex-direction: row;
+    }
+
+    .menu {
+        display: inline-block;
+        float: right;
+        padding: 20px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 18px; /* Increase font size for menu items */
+    }
+}
+
+/* Media query for even larger screens (e.g., desktop) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px; /* Increase font size for desktop */
+    }
+}
