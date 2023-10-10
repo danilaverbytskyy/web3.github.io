@@ -19,6 +19,7 @@
         <a href="#task1" class="nav_item" id="elem-border">Links</a>
         <a href="#tablez" class="nav_item" id="elem-border">Table</a>
         <a href="#forma" class="nav_item" id="elem-border">Form</a>
+          <a href="#calculator" class="nav_item" id="elem-border">Calculator</a>
       </div>
       </nav>
     <div class="content">
@@ -177,10 +178,22 @@
             </form>
             </div>
         </div>
+        <h2 id="calculator">Calculator</h2>
+        <p> Choose a product:
+            <select id="productOptions" required>
+                <option>Apple 11</option>
+                <option>Banana 13.4</option>
+                <option>Melon 27.5</option>
+                <option>Watermelon 36</option>
+                <option>Strawberry 50</option>
+            </select></p>
+        <input id="quantity" name="quantity" type="number" min="1" required>
+        <button id="button">Calculate</button>
+        <p id="result"></p>
+        <script src="calculate.js"></script>
     </div>
     <footer class="Efooter">
         <span>&copy; Danila Verbytskyy 2023</span>
     </footer>
-    
 </body>
 </html>
