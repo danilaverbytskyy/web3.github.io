@@ -36,7 +36,7 @@ function onClick(event) {
     let quantity = document.getElementById('quantity').value;
     try {
         let product = new Product(productOption, quantity);
-        document.getElementById('result').textContent = 'Final price: ' + product.getFinalPrice();
+        document.getElementById('result').textContent = 'Final price: ' + product.getFinalPrice() + " руб.";
     } catch (error) {
         console.error(error.message);
         alert(error.message);
