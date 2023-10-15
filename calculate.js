@@ -11,7 +11,7 @@ class Product {
             throw new Error('Quantity cannot be less than 1');
         }
         if(Number.isInteger(this.quantity) === false) {
-            throw new Error('Quantity should be integer');
+            throw new Error('Quantity should be a positive whole number');
         }
 
         let i=0;
